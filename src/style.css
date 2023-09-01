@@ -2,7 +2,35 @@
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;*/
 
-h1 {
-  color: red;
-  font-family: "Montserrat", sans-serif;
+:root {
+  --main-site-color: #202020;
+  --secondary-site-color: #284221;
+}
+
+body {
+  padding-top: 80px;
+  background-color: var(--main-site-color);
+}
+
+div.main {
+  text-align: center;
+}
+
+.main h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 72px;
+  color: #fff;
+}
+.main h2 {
+  color: #fff;
+}
+.main h6 {
+  color: #fff;
+}
+.navbar-brand {
+  padding: 0 15px;
+}
+.nav-item {
+  padding: 0 50px !important;
 }
