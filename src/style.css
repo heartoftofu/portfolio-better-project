@@ -4,7 +4,7 @@ font-family: 'Roboto', sans-serif;*/
 
 :root {
   --main-site-color: #202020;
-  --secondary-site-color: #284221;
+  --secondary-site-color: #303030;
   --main-box-shadow: 2px 2px 10px 1px rgba(255, 255, 255, 1);
   --secondary-box-shadow: 10px 5px 30px 1px rgba(255, 255, 255, 1);
 }
@@ -59,6 +59,12 @@ div.main {
   border-color: #fff;
   background-color: var(--main-site-color);
   box-shadow: var(--main-box-shadow);
+  transition: all 200ms ease;
+}
+.get-started-button:hover,
+.see-content-button:hover {
+  box-shadow: 2px 2px 10px 1px #9ef0ff;
+  border-color: #9ef0ff;
 }
 .get-started-link,
 .see-content-link {
@@ -66,6 +72,7 @@ div.main {
   color: #fff;
   font-family: "Montserrat", sans-serif;
 }
+
 .navbar-brand {
   padding: 0 15px;
 }
