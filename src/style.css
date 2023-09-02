@@ -5,22 +5,31 @@ font-family: 'Roboto', sans-serif;*/
 :root {
   --main-site-color: #202020;
   --secondary-site-color: #284221;
+  --main-box-shadow: 5px 2px 10px 0.1px rgba(255, 255, 255, 1);
 }
 
 body {
   padding-top: 80px;
   background-color: var(--main-site-color);
+  color: #fff;
 }
 
 div.main {
   text-align: center;
+  height: 100vh;
+}
+.main-content {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .main h1 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 72px;
-  color: #fff;
 }
 .main h2 {
   color: #fff;
@@ -28,9 +37,39 @@ div.main {
 .main h6 {
   color: #fff;
 }
+.get-started-button,
+.see-content-button {
+  border: 1px solid;
+  border-radius: 45px;
+  padding: 10px 30px;
+  margin: 20px auto;
+  border-color: #fff;
+  background-color: var(--main-site-color);
+  box-shadow: var(--main-box-shadow);
+}
+.get-started-link,
+.see-content-link {
+  text-decoration: none;
+  color: #fff;
+}
 .navbar-brand {
   padding: 0 15px;
 }
 .nav-item {
   padding: 0 50px !important;
+}
+.row {
+  border: 1px solid;
+  border-radius: 50px;
+  margin: 50px auto;
+  padding: 50px;
+  box-shadow: var(--main-box-shadow);
+}
+
+.main-page-pictures {
+  width: 100%;
+  border-radius: 50px;
+}
+.vertical {
+  margin: auto;
 }
