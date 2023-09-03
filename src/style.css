@@ -33,25 +33,29 @@ div.main {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 72px;
-  color: #fff;
 }
 .main h2 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 24px;
-  color: #fff;
 }
 .main h6 {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
   font-size: 18px;
-  color: #fff;
 }
 .main h1,
 .main h2,
 .main h6 {
   margin: 20px;
 }
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  color: #fff;
+}
+
 .get-started-button,
 .see-content-button {
   border: 1px solid;
@@ -88,6 +92,7 @@ div.main {
   margin: 60px auto;
   padding: 50px;
   box-shadow: var(--secondary-box-shadow);
+  transition: var(--transition-hover);
 }
 
 .main-page-pictures {
@@ -96,15 +101,40 @@ div.main {
   transition: var(--transition-hover);
   filter: grayscale(100%);
 }
-.main-page-pictures:hover {
+.main-about:hover .about-img {
   filter: none;
 }
+.main-work:hover .work-img {
+  filter: none;
+}
+.main-contact:hover .contact-img {
+  filter: none;
+}
+.main-about:hover {
+  border-color: #a55635;
+  box-shadow: 10px 5px 30px 1px #a55635;
+}
+.main-work:hover {
+  border-color: #e21a3f;
+  box-shadow: 10px 5px 30px 1px #e21a3f;
+}
+.main-contact:hover {
+  border-color: #2c7180;
+  box-shadow: 10px 5px 30px 1px #2c7180;
+}
+.see-content-button-about:hover {
+  border-color: #a55635;
+  box-shadow: 2px 2px 15px 1px #a55635;
+}
+.see-content-button-work:hover {
+  border-color: #e21a3f;
+  box-shadow: 2px 2px 15px 1px #e21a3f;
+}
+.see-content-button-contact:hover {
+  border-color: #2c7180;
+  box-shadow: 2px 2px 15px 1px #2c7180;
+}
+
 .vertical {
   margin: auto;
-}
-p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 200;
-  font-size: 18px;
-  color: #fff;
 }
