@@ -8,6 +8,7 @@ font-family: 'Roboto', sans-serif;*/
   --highlights: #9ef0ff;
   --main-box-shadow: 2px 2px 10px 1px rgba(255, 255, 255, 1);
   --secondary-box-shadow: 10px 5px 30px 1px rgba(255, 255, 255, 1);
+  --transition-hover: all 200ms ease-in-out;
 }
 
 body {
@@ -60,7 +61,7 @@ div.main {
   border-color: #fff;
   background-color: var(--main-site-color);
   box-shadow: var(--main-box-shadow);
-  transition: all 200ms ease;
+  transition: var(--transition-hover);
 }
 .get-started-button:hover,
 .see-content-button:hover {
@@ -92,6 +93,11 @@ div.main {
 .main-page-pictures {
   width: 100%;
   border-radius: 50px;
+  transition: var(--transition-hover);
+  filter: grayscale(100%);
+}
+.main-page-pictures:hover {
+  filter: none;
 }
 .vertical {
   margin: auto;
