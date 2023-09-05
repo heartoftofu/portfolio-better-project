@@ -67,8 +67,7 @@ p {
   box-shadow: var(--main-box-shadow);
   transition: var(--transition-hover);
 }
-.get-started-button:hover,
-.see-content-button:hover {
+.get-started-button:hover {
   box-shadow: 2px 2px 15px 1px var(--highlights);
   border-color: var(--highlights);
 }
@@ -84,7 +83,7 @@ p {
   padding: 0 15px;
 }
 .nav-item {
-  padding: 0 50px !important;
+  padding: 0 30px !important;
 }
 .row {
   border: 1px solid;
@@ -94,9 +93,12 @@ p {
   box-shadow: var(--secondary-box-shadow);
   transition: var(--transition-hover);
 }
+.col-md-6 {
+  padding: 10px;
+  margin: auto;
+}
 
 .main-page-pictures {
-  width: 100%;
   border-radius: 50px;
   transition: var(--transition-hover);
   filter: grayscale(100%);
@@ -135,6 +137,66 @@ p {
   box-shadow: 2px 2px 15px 1px #2c7180;
 }
 
-.vertical {
-  margin: auto;
+@media (max-width: 450px) {
+  .main h1 {
+    font-size: 40px !important;
+  }
+  .main h2 {
+    font-size: 20px !important;
+  }
+  .main h6 {
+    font-size: 16px !important;
+  }
+  .navbar-brand {
+    font-size: 18px;
+  }
+  .nav-item {
+    padding: 0;
+  }
+  .navbar-toggler {
+    margin-right: 5px;
+  }
+  .get-started-button,
+  .see-content-button {
+    font-size: 12px;
+    border: 1px solid;
+    border-radius: 45px;
+    padding: 5px 15px;
+    margin: 20px auto;
+    border-color: #fff;
+  }
+  p {
+    font-size: 14px;
+  }
+  .main-page-pictures {
+    filter: none;
+  }
+  .get-started-button {
+    box-shadow: 2px 2px 15px 1px var(--highlights);
+    border-color: var(--highlights);
+  }
+  .main-about {
+    border-color: #a55635;
+    box-shadow: 10px 5px 30px 1px #a55635;
+  }
+  .main-work {
+    border-color: #e21a3f;
+    box-shadow: 10px 5px 30px 1px #e21a3f;
+  }
+  .main-contact {
+    border-color: #2c7180;
+    box-shadow: 10px 5px 30px 1px #2c7180;
+  }
+  .see-content-button-about {
+    border-color: #a55635;
+    box-shadow: 2px 2px 15px 1px #a55635;
+  }
+  .see-content-button-work {
+    border-color: #e21a3f;
+    box-shadow: 2px 2px 15px 1px #e21a3f;
+  }
+  .see-content-button-contact {
+    border-color: #2c7180;
+    box-shadow: 2px 2px 15px 1px #2c7180;
+  }
 }
