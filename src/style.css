@@ -138,6 +138,41 @@ p {
   box-shadow: 2px 2px 15px 1px #2c7180;
 }
 
+.about-page h1 {
+  margin: 20px 20px 50px 20px;
+}
+.marimar-img {
+  box-shadow: 2px 2px 20px 1px #000000be;
+  border: 1px solid var(--main-site-color);
+  max-width: 40%;
+  float: right;
+  margin: 30px;
+  border-radius: 45px;
+}
+.about-me-text-section {
+  text-indent: 20px;
+  padding: 50px;
+  margin: 20px auto;
+}
+.about-me-text-section p {
+  line-height: 30px;
+  margin: 35px;
+  font-weight: 300;
+}
+.my-cats-img {
+  box-shadow: 2px 2px 20px 1px #000000be;
+  border: 1px solid var(--main-site-color);
+  margin: 15px;
+  max-width: 70%;
+  border-radius: 45px;
+  padding: 0px;
+}
+.about-me-cats-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 450px) {
   .main h1 {
     font-size: 40px !important;
@@ -201,31 +236,30 @@ p {
     box-shadow: 2px 2px 15px 1px #2c7180;
   }
 }
-.about-page {
-  padding: 30px;
-}
+@media (max-width: 800px) {
+  .about-page h1 {
+    margin: 0;
+  }
+  .marimar-img {
+    float: none;
+    display: block;
+    max-width: 90%;
 
-.about-page h1 {
-  margin: 20px 20px 50px 20px;
-  font-size: ;
-}
-.marimar-img {
-  max-width: 40%;
-  float: right;
-  padding: 30px;
-  border-radius: 45px;
-}
-.about-me-text-section {
-  text-indent: 20px;
-  padding: 10px;
-  margin: 20px auto;
-}
-.about-me-text-section p {
-  margin: 30px;
-  font-weight: 300;
-}
-.my-cats-img {
-  margin: 25px;
-  max-width: 70%;
-  border-radius: 45px;
+    border-radius: 45px;
+    margin: 30px auto;
+  }
+  .about-me-text-section {
+    text-indent: 20px;
+    padding: 10px;
+    margin: 5px;
+  }
+  .about-me-text-section p {
+    margin: 10px;
+    font-weight: 300;
+  }
+  .my-cats-img {
+    margin: 5px;
+    max-width: 90%;
+    border-radius: 45px;
+  }
 }
