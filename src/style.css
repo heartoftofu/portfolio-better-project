@@ -15,6 +15,7 @@ body {
   padding-top: 80px;
   background-color: var(--main-site-color);
   color: #fff;
+  margin-bottom: 80px;
 }
 
 div.main {
@@ -51,7 +52,7 @@ div.main {
 }
 p {
   font-family: "Roboto", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 18px;
   color: #fff;
 }
@@ -85,7 +86,7 @@ p {
 .nav-item {
   padding: 0 30px !important;
 }
-.row {
+.row-index {
   border: 1px solid;
   border-radius: 50px;
   margin: 60px auto;
@@ -199,4 +200,32 @@ p {
     border-color: #2c7180;
     box-shadow: 2px 2px 15px 1px #2c7180;
   }
+}
+.about-page {
+  padding: 30px;
+}
+
+.about-page h1 {
+  margin: 20px 20px 50px 20px;
+  font-size: ;
+}
+.marimar-img {
+  max-width: 40%;
+  float: right;
+  padding: 30px;
+  border-radius: 45px;
+}
+.about-me-text-section {
+  text-indent: 20px;
+  padding: 10px;
+  margin: 20px auto;
+}
+.about-me-text-section p {
+  margin: 30px;
+  font-weight: 300;
+}
+.my-cats-img {
+  margin: 25px;
+  max-width: 70%;
+  border-radius: 45px;
 }
