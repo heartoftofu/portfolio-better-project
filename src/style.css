@@ -18,18 +18,19 @@ body {
   margin-bottom: 80px;
 }
 
+/*NAVBAR*/
+.navbar-brand {
+  padding: 0 15px;
+}
+.nav-item {
+  padding: 0 30px !important;
+}
+
+/*TEXT*/
 div.main {
   text-align: center;
   height: 100vh;
 }
-.main-content {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .main h1 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -56,9 +57,25 @@ p {
   font-size: 18px;
   color: #fff;
 }
+.about-page h1,
+.work-page h1 {
+  margin: 20px 20px 50px 20px;
+}
+.about-me-text-section {
+  text-indent: 20px;
+  padding: 50px;
+  margin: 0px;
+}
+.about-me-text-section p {
+  line-height: 30px;
+  margin: 35px;
+  font-weight: 300;
+}
 
+/*BUTTONS*/
 .get-started-button,
-.see-content-button {
+.see-content-button,
+.launch-app-button {
   border: 1px solid;
   border-radius: 45px;
   padding: 10px 30px;
@@ -72,20 +89,37 @@ p {
   box-shadow: 2px 2px 15px 1px var(--highlights);
   border-color: var(--highlights);
 }
+.see-content-button-about:hover {
+  border-color: #a55635;
+  box-shadow: 2px 2px 15px 1px #a55635;
+}
+.see-content-button-work:hover {
+  border-color: #e21a3f;
+  box-shadow: 2px 2px 15px 1px #e21a3f;
+}
+.see-content-button-contact:hover {
+  border-color: #2c7180;
+  box-shadow: 2px 2px 15px 1px #2c7180;
+}
+.launch-app-button-weather:hover {
+  border-color: #ec6e4c;
+  box-shadow: 2px 2px 15px 1px #ec6e4c;
+}
+.launch-app-button-hike:hover {
+  border-color: #96ae42;
+  box-shadow: 2px 2px 15px 1px #96ae42;
+}
 
+/*LINKS*/
 .get-started-link,
-.see-content-link {
+.see-content-link,
+.launch-app-link {
   text-decoration: none;
   color: #fff;
   font-family: "Montserrat", sans-serif;
 }
 
-.navbar-brand {
-  padding: 0 15px;
-}
-.nav-item {
-  padding: 0 30px !important;
-}
+/*ROWS STYLING*/
 .row-index {
   border: 1px solid;
   border-radius: 15px;
@@ -93,25 +127,6 @@ p {
   padding: 50px;
   box-shadow: var(--secondary-box-shadow);
   transition: var(--transition-hover);
-}
-.col-md-6 {
-  padding: 10px;
-  margin: auto;
-}
-
-.main-page-pictures {
-  border-radius: 15px;
-  transition: var(--transition-hover);
-  filter: grayscale(100%);
-}
-.main-about:hover .about-img {
-  filter: none;
-}
-.main-work:hover .work-img {
-  filter: none;
-}
-.main-contact:hover .contact-img {
-  filter: none;
 }
 .main-about:hover {
   border-color: #a55635;
@@ -125,21 +140,42 @@ p {
   border-color: #2c7180;
   box-shadow: 10px 5px 30px 1px #2c7180;
 }
-.see-content-button-about:hover {
-  border-color: #a55635;
-  box-shadow: 2px 2px 15px 1px #a55635;
+.project-weather:hover {
+  border-color: #ec6e4c;
+  box-shadow: 10px 5px 30px 1px #ec6e4c;
 }
-.see-content-button-work:hover {
-  border-color: #e21a3f;
-  box-shadow: 2px 2px 15px 1px #e21a3f;
-}
-.see-content-button-contact:hover {
-  border-color: #2c7180;
-  box-shadow: 2px 2px 15px 1px #2c7180;
+.project-hike:hover {
+  border-color: #96ae42;
+  box-shadow: 10px 5px 30px 1px #96ae42;
 }
 
-.about-page h1 {
-  margin: 20px 20px 50px 20px;
+/*COLUMNS*/
+.col-md-6 {
+  padding: 10px;
+  margin: auto;
+}
+
+/*IMAGES*/
+.main-page-pictures,
+.work-page-pictures {
+  border-radius: 15px;
+  transition: var(--transition-hover);
+  filter: grayscale(100%);
+}
+.main-about:hover .about-img {
+  filter: none;
+}
+.main-work:hover .work-img {
+  filter: none;
+}
+.main-contact:hover .contact-img {
+  filter: none;
+}
+.project-weather:hover .project-weather-pic {
+  filter: none;
+}
+.project-hike:hover .project-hike-pic {
+  filter: none;
 }
 .marimar-img {
   box-shadow: 2px 2px 20px 1px #000000be;
@@ -149,16 +185,6 @@ p {
   margin: 30px;
   border-radius: 15px;
 }
-.about-me-text-section {
-  text-indent: 20px;
-  padding: 50px;
-  margin: 0px;
-}
-.about-me-text-section p {
-  line-height: 30px;
-  margin: 35px;
-  font-weight: 300;
-}
 .my-cats-img {
   box-shadow: 2px 2px 20px 1px #000000be;
   border: 1px solid var(--main-site-color);
@@ -167,6 +193,15 @@ p {
   border-radius: 15px;
   padding: 0px;
 }
+
+/*OTHER ALIGNMENTS*/
+.main-content {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .about-me-cats-section {
   display: flex;
   align-items: center;
@@ -174,15 +209,7 @@ p {
 }
 
 @media (max-width: 450px) {
-  .main h1 {
-    font-size: 40px !important;
-  }
-  .main h2 {
-    font-size: 20px !important;
-  }
-  .main h6 {
-    font-size: 16px !important;
-  }
+  /*NAVBAR*/
   .navbar-brand {
     font-size: 18px;
   }
@@ -192,6 +219,22 @@ p {
   .navbar-toggler {
     margin-right: 5px;
   }
+
+  /*TEXT*/
+  .main h1 {
+    font-size: 40px !important;
+  }
+  .main h2 {
+    font-size: 20px !important;
+  }
+  .main h6 {
+    font-size: 16px !important;
+  }
+  p {
+    font-size: 14px;
+  }
+
+  /*BUTTONS*/
   .get-started-button,
   .see-content-button {
     font-size: 12px;
@@ -201,27 +244,9 @@ p {
     margin: 20px auto;
     border-color: #fff;
   }
-  p {
-    font-size: 14px;
-  }
-  .main-page-pictures {
-    filter: none;
-  }
   .get-started-button {
     box-shadow: 2px 2px 15px 1px var(--highlights);
     border-color: var(--highlights);
-  }
-  .main-about {
-    border-color: #a55635;
-    box-shadow: 10px 5px 30px 1px #a55635;
-  }
-  .main-work {
-    border-color: #e21a3f;
-    box-shadow: 10px 5px 30px 1px #e21a3f;
-  }
-  .main-contact {
-    border-color: #2c7180;
-    box-shadow: 10px 5px 30px 1px #2c7180;
   }
   .see-content-button-about {
     border-color: #a55635;
@@ -234,6 +259,42 @@ p {
   .see-content-button-contact {
     border-color: #2c7180;
     box-shadow: 2px 2px 15px 1px #2c7180;
+  }
+  .launch-app-button-weather {
+    border-color: #ec6e4c;
+    box-shadow: 2px 2px 15px 1px #ec6e4c;
+  }
+  .launch-app-button-hike {
+    border-color: #96ae42;
+    box-shadow: 2px 2px 15px 1px #96ae42;
+  }
+
+  /*ROWS STYLING*/
+  .main-about {
+    border-color: #a55635;
+    box-shadow: 10px 5px 30px 1px #a55635;
+  }
+  .main-work {
+    border-color: #e21a3f;
+    box-shadow: 10px 5px 30px 1px #e21a3f;
+  }
+  .main-contact {
+    border-color: #2c7180;
+    box-shadow: 10px 5px 30px 1px #2c7180;
+  }
+  .project-weather {
+    border-color: #ec6e4c;
+    box-shadow: 10px 5px 30px 1px #ec6e4c;
+  }
+  .project-hike {
+    border-color: #96ae42;
+    box-shadow: 10px 5px 30px 1px #96ae42;
+  }
+
+  /*IMAGES*/
+  .main-page-pictures,
+  .work-page-pictures {
+    filter: none;
   }
 }
 @media (max-width: 800px) {
