@@ -58,7 +58,8 @@ p {
   color: #fff;
 }
 .about-page h1,
-.work-page h1 {
+.work-page h1,
+.contact-page h1 {
   margin: 20px 20px 50px 20px;
 }
 .about-me-text-section {
@@ -70,6 +71,36 @@ p {
   line-height: 30px;
   margin: 35px;
   font-weight: 300;
+}
+.email,
+.phone {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+.social-media p {
+  font-family: "Montserrat", sans-serif;
+}
+.email-address {
+  text-decoration: none;
+  color: #fff;
+}
+.fa-brands {
+  font-size: 80px;
+  transition: var(--transition-hover);
+  color: #fff;
+}
+
+.fa-instagram:hover {
+  color: #bc318f;
+}
+.fa-linkedin:hover {
+  color: #0a66c2;
+}
+.fa-github:hover {
+  color: #7f4e96;
+}
+.email-address:hover {
+  font-weight: bold;
 }
 
 /*BUTTONS*/
@@ -148,11 +179,24 @@ p {
   border-color: #96ae42;
   box-shadow: 10px 5px 30px 1px #96ae42;
 }
+.contact-details,
+.social-media {
+  border: 1px solid #fff;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 80px;
+}
 
 /*COLUMNS*/
 .col-md-6 {
   padding: 10px;
   margin: auto;
+}
+.fa-envelope,
+.fa-phone,
+.fa-brands {
+  padding: 20px;
+  margin: 20px;
 }
 
 /*IMAGES*/
