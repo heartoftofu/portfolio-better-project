@@ -102,7 +102,13 @@ p {
 .email-address:hover {
   font-weight: bold;
 }
-
+footer {
+  font-size: 12px;
+}
+.footer-link {
+  text-decoration: none;
+  color: var(--highlights);
+}
 /*BUTTONS*/
 .get-started-button,
 .see-content-button,
