@@ -185,6 +185,7 @@ p {
   border-radius: 15px;
   padding: 30px;
   margin: 80px;
+  box-shadow: var(--secondary-box-shadow);
 }
 
 /*COLUMNS*/
@@ -277,6 +278,14 @@ p {
   p {
     font-size: 14px;
   }
+  .email-address,
+  .phone-number,
+  .social-media p {
+    font-size: 16px !important;
+  }
+  .fa-brands {
+    font-size: 50px;
+  }
 
   /*BUTTONS*/
   .get-started-button,
@@ -334,6 +343,13 @@ p {
     border-color: #96ae42;
     box-shadow: 10px 5px 30px 1px #96ae42;
   }
+  .contact-details,
+  .social-media {
+    border: 1px solid #fff;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 60px auto;
+  }
 
   /*IMAGES*/
   .main-page-pictures,
@@ -342,16 +358,13 @@ p {
   }
 }
 @media (max-width: 800px) {
+  /*TEXT*/
   .about-page h1 {
     margin: 0;
   }
-  .marimar-img {
-    float: none;
-    display: block;
-    max-width: 90%;
-
-    border-radius: 45px;
-    margin: 30px auto;
+  .email-address,
+  .phone-number {
+    font-size: 18px;
   }
   .about-me-text-section {
     text-indent: 20px;
@@ -361,6 +374,32 @@ p {
   .about-me-text-section p {
     margin: 10px;
     font-weight: 300;
+  }
+  .fa-instagram {
+    color: #bc318f;
+  }
+  .fa-linkedin {
+    color: #0a66c2;
+  }
+  .fa-github {
+    color: #7f4e96;
+  }
+
+  /*COLUMNS*/
+  .fa-envelope,
+  .fa-phone,
+  .fa-brands {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  /*IMAGES*/
+  .marimar-img {
+    float: none;
+    display: block;
+    max-width: 90%;
+    border-radius: 45px;
+    margin: 30px auto;
   }
   .my-cats-img {
     margin: 5px;
